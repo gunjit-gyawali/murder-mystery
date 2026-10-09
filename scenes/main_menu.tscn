@@ -13,31 +13,31 @@ texture = ExtResource("1_l6cm7")
 [sub_resource type="Gradient" id="Gradient_l6cm7"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_a6whi"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rtw2f"]
 gradient = SubResource("Gradient_l6cm7")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n27jj"]
-texture = SubResource("GradientTexture2D_a6whi")
+texture = SubResource("GradientTexture2D_rtw2f")
 
 [sub_resource type="Gradient" id="Gradient_8ln24"]
 offsets = PackedFloat32Array(0, 0.985)
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_hlm2v"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oa1go"]
 gradient = SubResource("Gradient_8ln24")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a6whi"]
-texture = SubResource("GradientTexture2D_hlm2v")
+texture = SubResource("GradientTexture2D_oa1go")
 
 [sub_resource type="Gradient" id="Gradient_rtw2f"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_n2ljn"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tbmy8"]
 gradient = SubResource("Gradient_rtw2f")
 fill_to = Vector2(0, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nhqbi"]
-texture = SubResource("GradientTexture2D_n2ljn")
+texture = SubResource("GradientTexture2D_tbmy8")
 
 [sub_resource type="LabelSettings" id="LabelSettings_a6whi"]
 font = ExtResource("2_bqqt6")
@@ -116,11 +116,11 @@ shadow_offset = Vector2(0, 4)
 [sub_resource type="Gradient" id="Gradient_wu84c"]
 colors = PackedColorArray(0.15294118, 0.047058824, 0.07058824, 1, 0.15294118, 0.047058824, 0.07058824, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_iubw1"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_jk1qb"]
 gradient = SubResource("Gradient_wu84c")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hlm2v"]
-texture = SubResource("GradientTexture2D_iubw1")
+texture = SubResource("GradientTexture2D_jk1qb")
 
 [node name="Main_menu" type="Node2D" unique_id=1084680726]
 script = ExtResource("1_rtw2f")
@@ -129,7 +129,6 @@ script = ExtResource("1_rtw2f")
 offset_right = 1167.0
 offset_bottom = 658.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_yw88p")
-metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="." unique_id=1658814004]
 offset_left = -58.0
@@ -144,24 +143,6 @@ offset_top = -40.0
 offset_right = 446.0
 offset_bottom = 706.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_a6whi")
-
-[node name="Arrow" type="Sprite2D" parent="." unique_id=837381827]
-visible = false
-position = Vector2(39, 342)
-scale = Vector2(0.099768505, 0.09976851)
-texture = ExtResource("5_8ln24")
-
-[node name="Arrow2" type="Sprite2D" parent="." unique_id=403527460]
-visible = false
-position = Vector2(39, 438)
-scale = Vector2(0.099768505, 0.09976851)
-texture = ExtResource("5_8ln24")
-
-[node name="Arrow3" type="Sprite2D" parent="." unique_id=1078118149]
-visible = false
-position = Vector2(39, 534)
-scale = Vector2(0.099768505, 0.09976851)
-texture = ExtResource("5_8ln24")
 
 [node name="Panel6" type="Panel" parent="." unique_id=813385339]
 offset_left = 864.531
@@ -254,6 +235,24 @@ offset_top = 502.0
 offset_right = 607.87805
 offset_bottom = 569.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_hlm2v")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=837381827]
+visible = false
+position = Vector2(39, 342)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("5_8ln24")
+
+[node name="Arrow2" type="Sprite2D" parent="." unique_id=403527460]
+visible = false
+position = Vector2(39, 438)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("5_8ln24")
+
+[node name="Arrow3" type="Sprite2D" parent="." unique_id=1078118149]
+visible = false
+position = Vector2(39, 534)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("5_8ln24")
 
 [connection signal="mouse_entered" from="start" to="." method="_on_start_mouse_entered"]
 [connection signal="mouse_exited" from="start" to="." method="_on_start_mouse_exited"]
