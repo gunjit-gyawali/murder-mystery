@@ -12,7 +12,6 @@ config_version=5
 
 config/name="murder-mystery"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 
