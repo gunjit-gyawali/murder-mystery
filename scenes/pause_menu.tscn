@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://q2emyuth2tk6" path="res://assets/fonts/Nightcore Demo.ttf" id="2_5d2l8"]
 [ext_resource type="FontFile" uid="uid://cq2md06pldohi" path="res://assets/fonts/CinzelDecorative-Bold.ttf" id="3_7l7mv"]
 [ext_resource type="Texture2D" uid="uid://q8do4bhtomkh" path="res://assets/images/arrow.png" id="5_7l7mv"]
+[ext_resource type="PackedScene" uid="uid://blso0hwjn0g3q" path="res://scenes/node.tscn" id="6_v4r4p"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uahpa"]
 bg_color = Color(0.15294118, 0.047058824, 0.07058824, 0.6392157)
@@ -95,11 +96,11 @@ shadow_offset = Vector2(0, 4)
 [sub_resource type="Gradient" id="Gradient_ofnjo"]
 colors = PackedColorArray(0.15294118, 0.047058824, 0.07058824, 1, 0.15294118, 0.047058824, 0.07058824, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_iubw1"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1s2dm"]
 gradient = SubResource("Gradient_ofnjo")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1rgno"]
-texture = SubResource("GradientTexture2D_iubw1")
+texture = SubResource("GradientTexture2D_1s2dm")
 
 [node name="pause_menu" type="Node2D" unique_id=788350985]
 script = ExtResource("1_5d2l8")
@@ -273,6 +274,14 @@ rotation = 3.1368258
 scale = Vector2(0.099768505, 0.09976851)
 texture = ExtResource("5_7l7mv")
 
+[node name="Node" parent="." unique_id=58315418 instance=ExtResource("6_v4r4p")]
+
+[node name="CheckButton" parent="Node" index="0" unique_id=1296637412]
+offset_left = 693.0
+offset_top = 424.0
+offset_right = 737.0
+offset_bottom = 448.0
+
 [connection signal="mouse_entered" from="full_screen" to="." method="_on_full_screen_mouse_entered"]
 [connection signal="mouse_exited" from="full_screen" to="." method="_on_full_screen_mouse_exited"]
 [connection signal="pressed" from="full_screen" to="." method="_on_full_screen_pressed"]
@@ -282,3 +291,5 @@ texture = ExtResource("5_7l7mv")
 [connection signal="mouse_entered" from="exit" to="." method="_on_exit_mouse_entered"]
 [connection signal="mouse_exited" from="exit" to="." method="_on_exit_mouse_exited"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+
+[editable path="Node"]

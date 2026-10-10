@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bbmlk2r207qpx"]
+
+[ext_resource type="Script" uid="uid://cy1ltaotx76mi" path="res://scripts/music.gd" id="1_05ggv"]
+[ext_resource type="Script" uid="uid://y7gvsyu5c3qh" path="res://scripts/music_check.gd" id="2_ibx2e"]
+
+[node name="music" type="Node2D" unique_id=2066887780]
+script = ExtResource("1_05ggv")
+
+[node name="music_check" type="CheckButton" parent="." unique_id=1024453800]
+offset_right = 44.0
+offset_bottom = 24.0
+button_pressed = true
+script = ExtResource("2_ibx2e")
+
+[connection signal="pressed" from="music_check" to="." method="_on_music_check_pressed"]
