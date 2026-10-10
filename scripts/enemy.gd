@@ -1,0 +1,92 @@
+class_name Enemy
+extends CharacterBody2D
+
+@export var speed: float = 40.0
+
+var can_take_damage = true
+
+var health = 80
+var player_inattack_zone = false
+
+var player: Node2D = null
+var player_chase: bool = false
+
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+
+
+func _physics_process(_delta: float) -> void:
+	deal_damage()
+	update_health()
+	
+	
+	if player_chase and is_instance_valid(player):
+		var target: Vector2 = _player_target()
+		var direction: Vector2 = _self_center().direction_to(target)
+		velocity = direction * speed
+		move_and_slide()
+
+		if direction.x != 0.0:
+			sprite.flip_h = direction.x < 0.0
+		sprite.play("walk")
+	else:
+		velocity = Vector2.ZERO
+		sprite.play("idle")
+
+
+func _player_target() -> Vector2:
+	var player_body: Node2D = player.get_node_or_null("CollisionShape2D")
+	if player_body != null:
+		return player_body.global_position
+	return player.global_position
+
+
+func _self_center() -> Vector2:
+	var body: Node2D = get_node_or_null("CollisionShape2D")
+	if body != null:
+		return body.global_position
+	return global_position
+
+
+func _on_detection_area_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		player = body
+		player_chase = true
+
+func _on_detection_area_body_exited(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		player = null
+		player_chase = false
+
+func enemy():
+	pass
+
+
+func _on_enemy_hitbox_body_entered(body: Node2D) -> void:
+	if body.has_method("player"):
+		player_inattack_zone = true
+
+
+func _on_enemy_hitbox_body_exited(body: Node2D) -> void:
+	if body.has_method("player"):
+		player_inattack_zone = false
+		
+func deal_damage():
+	if player_inattack_zone and Global.current_player_attack == true :
+		if can_take_damage == true:
+			health = health - 20
+			$take_damage_cooldown.start()
+			can_take_damage = false
+			if health <= 0:
+				self.queue_free()
+
+
+func _on_take_damage_cooldown_timeout() -> void:
+	can_take_damage = true
+
+func update_health():
+	var healthbar = $healthbar
+	healthbar.value = health
+	if health == 80:
+		healthbar.visible = false
+	else:
+		healthbar.visible = true
