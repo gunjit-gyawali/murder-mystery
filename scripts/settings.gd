@@ -2,6 +2,8 @@ extends Node2D
 
 
 func _on_full_screen_pressed() -> void:
+	$pressed.play()
+	await $pressed.finished
 	if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 	else:
@@ -11,6 +13,9 @@ func _on_full_screen_pressed() -> void:
 func _on_full_screen_mouse_entered() -> void:
 	$Arrow.visible = true
 	$Arrow4.visible = true
+	$hover.play()
+	await $hover.finished
+
 
 
 func _on_full_screen_mouse_exited() -> void:
@@ -18,11 +23,16 @@ func _on_full_screen_mouse_exited() -> void:
 	$Arrow4.visible = false
 
 func _on_music_pressed() -> void:
-	pass
+	$pressed.play()
+	await $pressed.finished
+	
 
 func _on_music_mouse_entered() -> void:
 	$Arrow2.visible = true
 	$Arrow5.visible = true
+	$hover.play()
+	await $hover.finished
+
 
 
 func _on_music_mouse_exited() -> void:
@@ -31,12 +41,17 @@ func _on_music_mouse_exited() -> void:
 
 
 func _on_exit_pressed() -> void:
+	$pressed.play()
+	await $pressed.finished
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
 
 func _on_exit_mouse_entered() -> void:
 	$Arrow3.visible = true
 	$Arrow6.visible = true
+	$hover.play()
+	await $hover.finished
+
 
 
 func _on_exit_mouse_exited() -> void:

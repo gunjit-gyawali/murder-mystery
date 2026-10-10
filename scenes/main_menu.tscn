@@ -6,6 +6,8 @@
 [ext_resource type="FontFile" uid="uid://q2emyuth2tk6" path="res://assets/fonts/Nightcore Demo.ttf" id="3_wu84c"]
 [ext_resource type="FontFile" uid="uid://cq2md06pldohi" path="res://assets/fonts/CinzelDecorative-Bold.ttf" id="4_wu84c"]
 [ext_resource type="Texture2D" uid="uid://q8do4bhtomkh" path="res://assets/images/arrow.png" id="5_8ln24"]
+[ext_resource type="AudioStream" uid="uid://cjel25816d2ea" path="res://assets/music/hover.mp3" id="7_oa1go"]
+[ext_resource type="AudioStream" uid="uid://duvxrvui0p51n" path="res://assets/music/pressed.mp3" id="8_tbmy8"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yw88p"]
 texture = ExtResource("1_l6cm7")
@@ -253,6 +255,12 @@ visible = false
 position = Vector2(39, 534)
 scale = Vector2(0.099768505, 0.09976851)
 texture = ExtResource("5_8ln24")
+
+[node name="hover" type="AudioStreamPlayer" parent="." unique_id=1153211244]
+stream = ExtResource("7_oa1go")
+
+[node name="pressed" type="AudioStreamPlayer" parent="." unique_id=1837313511]
+stream = ExtResource("8_tbmy8")
 
 [connection signal="mouse_entered" from="start" to="." method="_on_start_mouse_entered"]
 [connection signal="mouse_exited" from="start" to="." method="_on_start_mouse_exited"]
