@@ -1,0 +1,265 @@
+[gd_scene format=3 uid="uid://b7vraiwsast2q"]
+
+[ext_resource type="Texture2D" uid="uid://cru4cmwg2x8lv" path="res://assets/images/Ravenhollow Estate Under Moonlight.png" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://crquc8xco0l7i" path="res://scripts/main_menu.gd" id="1_rtw2f"]
+[ext_resource type="FontFile" uid="uid://cgj1irbbms4yq" path="res://assets/fonts/Another Danger - Demo.otf" id="2_bqqt6"]
+[ext_resource type="FontFile" uid="uid://q2emyuth2tk6" path="res://assets/fonts/Nightcore Demo.ttf" id="3_wu84c"]
+[ext_resource type="FontFile" uid="uid://cq2md06pldohi" path="res://assets/fonts/CinzelDecorative-Bold.ttf" id="4_wu84c"]
+[ext_resource type="Texture2D" uid="uid://q8do4bhtomkh" path="res://assets/images/arrow.png" id="5_8ln24"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yw88p"]
+texture = ExtResource("1_l6cm7")
+
+[sub_resource type="Gradient" id="Gradient_l6cm7"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rtw2f"]
+gradient = SubResource("Gradient_l6cm7")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n27jj"]
+texture = SubResource("GradientTexture2D_rtw2f")
+
+[sub_resource type="Gradient" id="Gradient_8ln24"]
+offsets = PackedFloat32Array(0, 0.985)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oa1go"]
+gradient = SubResource("Gradient_8ln24")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a6whi"]
+texture = SubResource("GradientTexture2D_oa1go")
+
+[sub_resource type="Gradient" id="Gradient_rtw2f"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tbmy8"]
+gradient = SubResource("Gradient_rtw2f")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nhqbi"]
+texture = SubResource("GradientTexture2D_tbmy8")
+
+[sub_resource type="LabelSettings" id="LabelSettings_a6whi"]
+font = ExtResource("2_bqqt6")
+font_size = 20
+font_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 1)
+stacked_outline_count = 1
+stacked_outline_0/size = 1
+stacked_outline_0/color = Color(0.8352941, 0, 0, 0.84705883)
+
+[sub_resource type="LabelSettings" id="LabelSettings_n27jj"]
+font = ExtResource("3_wu84c")
+font_size = 50
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+shadow_size = 8
+shadow_color = Color(0.02745098, 0.043137256, 0.0627451, 1)
+shadow_offset = Vector2(6, 5)
+stacked_outline_count = 1
+stacked_outline_0/size = 4
+stacked_outline_0/color = Color(0.78431374, 0.8235294, 0.8666667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yw88p"]
+font = ExtResource("3_wu84c")
+font_size = 50
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yw88p"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_bottom = 10
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_bottom = 6
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="Gradient" id="Gradient_wu84c"]
+colors = PackedColorArray(0.15294118, 0.047058824, 0.07058824, 1, 0.15294118, 0.047058824, 0.07058824, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_jk1qb"]
+gradient = SubResource("Gradient_wu84c")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hlm2v"]
+texture = SubResource("GradientTexture2D_jk1qb")
+
+[node name="Main_menu" type="Node2D" unique_id=1084680726]
+script = ExtResource("1_rtw2f")
+
+[node name="bg_image" type="Panel" parent="." unique_id=855478629]
+offset_right = 1167.0
+offset_bottom = 658.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_yw88p")
+
+[node name="Panel" type="Panel" parent="." unique_id=1658814004]
+offset_left = -58.0
+offset_top = -88.0
+offset_right = 578.0
+offset_bottom = 709.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_n27jj")
+
+[node name="Panel2" type="Panel" parent="." unique_id=346041475]
+offset_left = -145.0
+offset_top = -40.0
+offset_right = 446.0
+offset_bottom = 706.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_a6whi")
+
+[node name="Panel6" type="Panel" parent="." unique_id=813385339]
+offset_left = 864.531
+offset_top = -817.23267
+offset_right = 2068.5024
+offset_bottom = 849.25024
+rotation = 0.6176355
+theme_override_styles/panel = SubResource("StyleBoxTexture_nhqbi")
+
+[node name="murder_mystery" type="Label" parent="." unique_id=1516650978]
+offset_left = 98.0
+offset_top = 207.0
+offset_right = 586.0
+offset_bottom = 259.0
+text = "              M u r d e r   M y s t e r y"
+label_settings = SubResource("LabelSettings_a6whi")
+
+[node name="Label" type="Label" parent="." unique_id=1545075209]
+offset_left = 62.0
+offset_top = 130.0
+offset_right = 575.0
+offset_bottom = 212.0
+text = "(U n S E E N  K I L l e r)  "
+label_settings = SubResource("LabelSettings_n27jj")
+
+[node name="The" type="Label" parent="." unique_id=36473954]
+offset_left = 244.0
+offset_top = 76.0
+offset_right = 357.0
+offset_bottom = 155.0
+text = "THE"
+label_settings = SubResource("LabelSettings_yw88p")
+
+[node name="start" type="Button" parent="." unique_id=339675567]
+offset_left = -78.0
+offset_top = 308.0
+offset_right = 451.0
+offset_bottom = 379.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_yw88p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ln24")
+text = "Start game"
+
+[node name="Panel3" type="Panel" parent="." unique_id=1244750559]
+offset_left = 451.0
+offset_top = 310.0
+offset_right = 607.87805
+offset_bottom = 377.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_hlm2v")
+
+[node name="settings" type="Button" parent="." unique_id=534206020]
+offset_left = -78.0
+offset_top = 404.0
+offset_right = 451.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_yw88p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ln24")
+text = "Settings"
+
+[node name="Panel4" type="Panel" parent="." unique_id=376082371]
+offset_left = 451.0
+offset_top = 406.0
+offset_right = 607.87805
+offset_bottom = 473.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_hlm2v")
+
+[node name="quit" type="Button" parent="." unique_id=1788479269]
+offset_left = -78.0
+offset_top = 500.0
+offset_right = 451.0
+offset_bottom = 571.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_wu84c")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_yw88p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8ln24")
+text = "Quit"
+
+[node name="Panel5" type="Panel" parent="." unique_id=1838679603]
+offset_left = 451.0
+offset_top = 502.0
+offset_right = 607.87805
+offset_bottom = 569.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_hlm2v")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=837381827]
+visible = false
+position = Vector2(39, 342)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("5_8ln24")
+
+[node name="Arrow2" type="Sprite2D" parent="." unique_id=403527460]
+visible = false
+position = Vector2(39, 438)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("5_8ln24")
+
+[node name="Arrow3" type="Sprite2D" parent="." unique_id=1078118149]
+visible = false
+position = Vector2(39, 534)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("5_8ln24")
+
+[connection signal="mouse_entered" from="start" to="." method="_on_start_mouse_entered"]
+[connection signal="mouse_exited" from="start" to="." method="_on_start_mouse_exited"]
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="settings" to="." method="_on_settings_mouse_entered"]
+[connection signal="mouse_exited" from="settings" to="." method="_on_settings_mouse_exited"]
+[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
+[connection signal="mouse_entered" from="quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="quit" to="." method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

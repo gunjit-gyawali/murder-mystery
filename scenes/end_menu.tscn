@@ -1,0 +1,232 @@
+[gd_scene format=3 uid="uid://cfrmx31msgaad"]
+
+[ext_resource type="Script" uid="uid://c5wuwykixxkrf" path="res://scripts/end_menu.gd" id="1_nsqeq"]
+[ext_resource type="Texture2D" uid="uid://bfot4nc08ow4w" path="res://assets/images/dead_menu.png" id="1_wqo5a"]
+[ext_resource type="FontFile" uid="uid://tv3u1kathipb" path="res://assets/fonts/DoubleFeature30.ttf" id="2_nsqeq"]
+[ext_resource type="FontFile" uid="uid://cgj1irbbms4yq" path="res://assets/fonts/Another Danger - Demo.otf" id="3_lnecb"]
+[ext_resource type="FontFile" uid="uid://cq2md06pldohi" path="res://assets/fonts/CinzelDecorative-Bold.ttf" id="4_f4hmx"]
+[ext_resource type="FontFile" uid="uid://q2emyuth2tk6" path="res://assets/fonts/Nightcore Demo.ttf" id="5_x5d8p"]
+[ext_resource type="Texture2D" uid="uid://q8do4bhtomkh" path="res://assets/images/arrow.png" id="6_iqs5b"]
+[ext_resource type="Texture2D" uid="uid://c3v85e4vn5iny" path="res://assets/images/line_1.png" id="7_rem33"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_knx06"]
+texture = ExtResource("1_wqo5a")
+
+[sub_resource type="Gradient" id="Gradient_wqo5a"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_n27jj"]
+gradient = SubResource("Gradient_wqo5a")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yw88p"]
+texture = SubResource("GradientTexture2D_n27jj")
+
+[sub_resource type="Gradient" id="Gradient_2dt23"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tksux"]
+gradient = SubResource("Gradient_2dt23")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mc7xi"]
+texture = SubResource("GradientTexture2D_tksux")
+
+[sub_resource type="LabelSettings" id="LabelSettings_8o8dt"]
+font = ExtResource("2_nsqeq")
+font_size = 55
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+outline_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.22790706, 0.22791076, 0.22790891, 1)
+shadow_offset = Vector2(5, 5)
+stacked_outline_count = 1
+stacked_outline_0/size = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_1p1mj"]
+font = ExtResource("3_lnecb")
+font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7gll6"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uy5jt"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 10
+border_width_bottom = 10
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6liln"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 6
+border_width_bottom = 6
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mb311"]
+font = ExtResource("5_x5d8p")
+font_size = 60
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+shadow_size = 8
+shadow_color = Color(0.02745098, 0.043137256, 0.0627451, 1)
+shadow_offset = Vector2(6, 5)
+stacked_outline_count = 1
+stacked_outline_0/size = 4
+stacked_outline_0/color = Color(0.78431374, 0.8235294, 0.8666667, 1)
+
+[sub_resource type="Gradient" id="Gradient_ol4yd"]
+colors = PackedColorArray(0.15294118, 0.047058824, 0.07058824, 1, 0.15294118, 0.047058824, 0.07058824, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gxc36"]
+gradient = SubResource("Gradient_ol4yd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dackk"]
+texture = SubResource("GradientTexture2D_gxc36")
+
+[sub_resource type="Gradient" id="Gradient_nsqeq"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a6whi"]
+gradient = SubResource("Gradient_nsqeq")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n27jj"]
+texture = SubResource("GradientTexture2D_a6whi")
+
+[node name="end_menu" type="Node2D" unique_id=2086300893]
+script = ExtResource("1_nsqeq")
+
+[node name="Panel" type="Panel" parent="." unique_id=1290020647]
+offset_right = 1165.0
+offset_bottom = 657.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_knx06")
+
+[node name="Panel6" type="Panel" parent="." unique_id=685941880]
+offset_left = -121.0
+offset_top = -75.0
+offset_right = 1224.0
+offset_bottom = 296.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_yw88p")
+
+[node name="Panel2" type="Panel" parent="." unique_id=1555479794]
+offset_left = 190.99997
+offset_top = -990.0
+offset_right = 977.0198
+offset_bottom = 781.8356
+rotation = 0.7451721
+theme_override_styles/panel = SubResource("StyleBoxTexture_mc7xi")
+
+[node name="Panel3" type="Panel" parent="." unique_id=1203334633]
+offset_left = 1860.0
+offset_top = 733.0
+offset_right = 2567.6655
+offset_bottom = 2504.8354
+rotation = 2.714833
+theme_override_styles/panel = SubResource("StyleBoxTexture_mc7xi")
+
+[node name="Panel4" type="Panel" parent="." unique_id=1848142553]
+offset_left = -280.00003
+offset_top = 1078.0001
+offset_right = 803.5757
+offset_bottom = 2849.8354
+rotation = 4.713735
+theme_override_styles/panel = SubResource("StyleBoxTexture_mc7xi")
+
+[node name="end_game" type="Label" parent="." unique_id=930911317]
+offset_left = 134.0
+offset_top = 77.0
+offset_right = 672.0
+offset_bottom = 157.0
+text = "C a s e  S o l v e d"
+label_settings = SubResource("LabelSettings_8o8dt")
+
+[node name="caption" type="Label" parent="." unique_id=1448358767]
+offset_left = 230.0
+offset_top = 161.0
+offset_right = 606.0
+offset_bottom = 213.0
+text = "T h e  t r u t h  h a s  b e e n  r e v e a l e d"
+label_settings = SubResource("LabelSettings_1p1mj")
+
+[node name="main__menu" type="Button" parent="." unique_id=247394441]
+offset_left = 187.0
+offset_top = 364.0
+offset_right = 695.0
+offset_bottom = 435.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_colors/font_pressed_color = Color(0.64466625, 0.084995665, 9.62615e-08, 1)
+theme_override_colors/font_hover_color = Color(0.80784315, 0.11764706, 0.14509805, 1)
+theme_override_fonts/font = ExtResource("4_f4hmx")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_7gll6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_uy5jt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6liln")
+text = "~ Return to the Main menu..."
+
+[node name="arrows" type="Label" parent="." unique_id=1870418266]
+offset_left = 38.0
+offset_top = 53.0
+offset_right = 1075.0
+offset_bottom = 148.0
+text = "(                                               )"
+label_settings = SubResource("LabelSettings_mb311")
+
+[node name="Panel5" type="Panel" parent="." unique_id=716884518]
+offset_left = 691.0
+offset_top = 367.0
+offset_right = 754.0
+offset_bottom = 434.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_dackk")
+
+[node name="Panel8" type="Panel" parent="." unique_id=1272958616]
+offset_left = 188.0
+offset_top = 435.0
+offset_right = 863.23694
+offset_bottom = 502.0
+rotation = 3.1415927
+theme_override_styles/panel = SubResource("StyleBoxTexture_dackk")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=1867608278]
+visible = false
+position = Vector2(431.00003, 390)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("6_iqs5b")
+
+[node name="Line1" type="Sprite2D" parent="." unique_id=1849321694]
+position = Vector2(419, 228.00003)
+scale = Vector2(0.53773147, 0.4212963)
+texture = ExtResource("7_rem33")
+
+[node name="Panel7" type="Panel" parent="." unique_id=2002113203]
+offset_left = -205.0
+offset_top = 445.0
+offset_right = 1302.0
+offset_bottom = 916.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_n27jj")
+
+[connection signal="pressed" from="main__menu" to="." method="_on_main__menu_pressed"]

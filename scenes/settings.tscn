@@ -1,0 +1,323 @@
+[gd_scene format=3 uid="uid://kbcbfy8nqgme"]
+
+[ext_resource type="Texture2D" uid="uid://cru4cmwg2x8lv" path="res://assets/images/Ravenhollow Estate Under Moonlight.png" id="1_es4n0"]
+[ext_resource type="Script" uid="uid://dawvasr6qsdel" path="res://scripts/settings.gd" id="1_gis3k"]
+[ext_resource type="Texture2D" uid="uid://q8do4bhtomkh" path="res://assets/images/arrow.png" id="2_gis3k"]
+[ext_resource type="FontFile" uid="uid://cgj1irbbms4yq" path="res://assets/fonts/Another Danger - Demo.otf" id="3_83j8s"]
+[ext_resource type="FontFile" uid="uid://q2emyuth2tk6" path="res://assets/fonts/Nightcore Demo.ttf" id="4_gjs24"]
+[ext_resource type="FontFile" uid="uid://cq2md06pldohi" path="res://assets/fonts/CinzelDecorative-Bold.ttf" id="5_am25x"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ppmf"]
+texture = ExtResource("1_es4n0")
+
+[sub_resource type="Gradient" id="Gradient_uhhto"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a6whi"]
+gradient = SubResource("Gradient_uhhto")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1g033"]
+texture = SubResource("GradientTexture2D_a6whi")
+
+[sub_resource type="Gradient" id="Gradient_01roj"]
+offsets = PackedFloat32Array(0, 0.985)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hlm2v"]
+gradient = SubResource("Gradient_01roj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wqwn7"]
+texture = SubResource("GradientTexture2D_hlm2v")
+
+[sub_resource type="Gradient" id="Gradient_gis3k"]
+offsets = PackedFloat32Array(0, 0.985)
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_83j8s"]
+gradient = SubResource("Gradient_gis3k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gjs24"]
+texture = SubResource("GradientTexture2D_83j8s")
+
+[sub_resource type="LabelSettings" id="LabelSettings_oe2nd"]
+font = ExtResource("3_83j8s")
+font_size = 20
+font_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 1)
+stacked_outline_count = 1
+stacked_outline_0/size = 1
+stacked_outline_0/color = Color(0.8352941, 0, 0, 0.84705883)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7kvyq"]
+font = ExtResource("4_gjs24")
+font_size = 60
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+shadow_size = 8
+shadow_color = Color(0.02745098, 0.043137256, 0.0627451, 1)
+shadow_offset = Vector2(6, 5)
+stacked_outline_count = 1
+stacked_outline_0/size = 4
+stacked_outline_0/color = Color(0.78431374, 0.8235294, 0.8666667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ql1j0"]
+font = ExtResource("4_gjs24")
+font_size = 40
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6dbjw"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g5y2q"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_bottom = 10
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k00b3"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_bottom = 6
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="Gradient" id="Gradient_aisiw"]
+colors = PackedColorArray(0.15294118, 0.047058824, 0.07058824, 1, 0.15294118, 0.047058824, 0.07058824, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_iubw1"]
+gradient = SubResource("Gradient_aisiw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f1e71"]
+texture = SubResource("GradientTexture2D_iubw1")
+
+[node name="settings" type="Node2D" unique_id=304832695]
+script = ExtResource("1_gis3k")
+
+[node name="bg_image" type="Panel" parent="." unique_id=1217971341]
+offset_right = 1167.0
+offset_bottom = 658.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_4ppmf")
+
+[node name="Panel" type="Panel" parent="." unique_id=680524259]
+offset_left = -58.0
+offset_top = -88.0
+offset_right = 578.0
+offset_bottom = 709.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_1g033")
+
+[node name="Panel2" type="Panel" parent="." unique_id=1037804745]
+offset_left = -145.0
+offset_top = -36.0
+offset_right = 537.0
+offset_bottom = 710.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_wqwn7")
+
+[node name="Panel9" type="Panel" parent="." unique_id=1394769682]
+offset_left = 411.0
+offset_top = -45.0
+offset_right = 1405.0
+offset_bottom = 701.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_gjs24")
+
+[node name="Panel10" type="Panel" parent="." unique_id=566697206]
+offset_left = 972.78894
+offset_top = -344.49066
+offset_right = 1966.789
+offset_bottom = 1305.6775
+rotation = 0.6640891
+theme_override_styles/panel = SubResource("StyleBoxTexture_gjs24")
+
+[node name="murder_mystery" type="Label" parent="." unique_id=2065777172]
+offset_left = 354.0
+offset_top = 215.0
+offset_right = 842.0
+offset_bottom = 267.0
+text = "              W H A T S  t h e  m a t t e r ? "
+label_settings = SubResource("LabelSettings_oe2nd")
+
+[node name="Label" type="Label" parent="." unique_id=212180075]
+offset_left = 341.0
+offset_top = 122.0
+offset_right = 854.0
+offset_bottom = 217.0
+text = "( S E T T I N G S )"
+label_settings = SubResource("LabelSettings_7kvyq")
+
+[node name="The" type="Label" parent="." unique_id=2094687825]
+offset_left = 524.0
+offset_top = 63.0
+offset_right = 637.0
+offset_bottom = 142.0
+text = "THE"
+label_settings = SubResource("LabelSettings_ql1j0")
+
+[node name="full_screen" type="Button" parent="." unique_id=1471705845]
+offset_left = 290.0
+offset_top = 308.0
+offset_right = 819.0
+offset_bottom = 379.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("5_am25x")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_6dbjw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g5y2q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_k00b3")
+text = "FUll Screen"
+
+[node name="Panel3" type="Panel" parent="." unique_id=1278664582]
+offset_left = 819.0
+offset_top = 310.0
+offset_right = 975.87805
+offset_bottom = 377.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f1e71")
+
+[node name="music" type="Button" parent="." unique_id=26457187]
+offset_left = 290.0
+offset_top = 404.0
+offset_right = 819.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("5_am25x")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_6dbjw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g5y2q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_k00b3")
+text = "Music      "
+
+[node name="Panel4" type="Panel" parent="." unique_id=1778217505]
+offset_left = 819.0
+offset_top = 406.0
+offset_right = 975.87805
+offset_bottom = 473.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f1e71")
+
+[node name="exit" type="Button" parent="." unique_id=347185482]
+offset_left = 290.0
+offset_top = 500.0
+offset_right = 819.0
+offset_bottom = 571.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("5_am25x")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_6dbjw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g5y2q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_k00b3")
+text = "Exit  "
+
+[node name="Panel5" type="Panel" parent="." unique_id=1039423535]
+offset_left = 819.0
+offset_top = 502.0
+offset_right = 975.87805
+offset_bottom = 569.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_f1e71")
+
+[node name="Panel6" type="Panel" parent="." unique_id=2060869306]
+offset_left = 291.0
+offset_top = 377.0
+offset_right = 447.87805
+offset_bottom = 444.0
+rotation = 3.1415927
+theme_override_styles/panel = SubResource("StyleBoxTexture_f1e71")
+
+[node name="Panel7" type="Panel" parent="." unique_id=1149721305]
+offset_left = 291.0
+offset_top = 473.0
+offset_right = 447.87805
+offset_bottom = 540.0
+rotation = 3.1415927
+theme_override_styles/panel = SubResource("StyleBoxTexture_f1e71")
+
+[node name="Panel8" type="Panel" parent="." unique_id=1893060559]
+offset_left = 291.0
+offset_top = 569.0
+offset_right = 447.87805
+offset_bottom = 636.0
+rotation = 3.1415927
+theme_override_styles/panel = SubResource("StyleBoxTexture_f1e71")
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=466211825]
+offset_left = 590.0
+offset_top = 425.0
+offset_right = 634.0
+offset_bottom = 449.0
+button_pressed = true
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=1316792069]
+visible = false
+position = Vector2(351, 342)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("2_gis3k")
+
+[node name="Arrow2" type="Sprite2D" parent="." unique_id=397989815]
+visible = false
+position = Vector2(351, 438)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("2_gis3k")
+
+[node name="Arrow3" type="Sprite2D" parent="." unique_id=1715408229]
+visible = false
+position = Vector2(351, 534)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("2_gis3k")
+
+[node name="Arrow4" type="Sprite2D" parent="." unique_id=1377959534]
+visible = false
+position = Vector2(742.99994, 342)
+rotation = 3.1415927
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("2_gis3k")
+
+[node name="Arrow5" type="Sprite2D" parent="." unique_id=2085460267]
+visible = false
+position = Vector2(742.99994, 438)
+rotation = 3.1368258
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("2_gis3k")
+
+[node name="Arrow6" type="Sprite2D" parent="." unique_id=1781301390]
+visible = false
+position = Vector2(742.99994, 534)
+rotation = 3.1368258
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("2_gis3k")
+
+[connection signal="mouse_entered" from="full_screen" to="." method="_on_full_screen_mouse_entered"]
+[connection signal="mouse_exited" from="full_screen" to="." method="_on_full_screen_mouse_exited"]
+[connection signal="pressed" from="full_screen" to="." method="_on_full_screen_pressed"]
+[connection signal="mouse_entered" from="music" to="." method="_on_music_mouse_entered"]
+[connection signal="mouse_exited" from="music" to="." method="_on_music_mouse_exited"]
+[connection signal="pressed" from="music" to="." method="_on_music_pressed"]
+[connection signal="mouse_entered" from="exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="mouse_exited" from="exit" to="." method="_on_exit_mouse_exited"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
