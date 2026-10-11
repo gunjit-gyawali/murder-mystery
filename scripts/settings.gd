@@ -1,5 +1,6 @@
 extends Node2D
 
+var music_on = true
 
 func _on_full_screen_pressed() -> void:
 	$pressed.play()
@@ -57,3 +58,13 @@ func _on_exit_mouse_entered() -> void:
 func _on_exit_mouse_exited() -> void:
 	$Arrow3.visible = false
 	$Arrow6.visible = false
+
+
+func _on_check_button_pressed() -> void:
+	if music_on == true:
+		BgMusic.stop()
+		music_on = false
+	else:
+		BgMusic.play()
+		music_on = true
+		

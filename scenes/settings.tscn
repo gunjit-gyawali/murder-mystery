@@ -6,7 +6,6 @@
 [ext_resource type="FontFile" uid="uid://cgj1irbbms4yq" path="res://assets/fonts/Another Danger - Demo.otf" id="3_83j8s"]
 [ext_resource type="FontFile" uid="uid://q2emyuth2tk6" path="res://assets/fonts/Nightcore Demo.ttf" id="4_gjs24"]
 [ext_resource type="FontFile" uid="uid://cq2md06pldohi" path="res://assets/fonts/CinzelDecorative-Bold.ttf" id="5_am25x"]
-[ext_resource type="PackedScene" uid="uid://blso0hwjn0g3q" path="res://scenes/node.tscn" id="7_83j8s"]
 [ext_resource type="AudioStream" uid="uid://cjel25816d2ea" path="res://assets/music/hover.mp3" id="8_am25x"]
 [ext_resource type="AudioStream" uid="uid://duvxrvui0p51n" path="res://assets/music/pressed.mp3" id="9_4ppmf"]
 
@@ -308,20 +307,18 @@ rotation = 3.1368258
 scale = Vector2(0.099768505, 0.09976851)
 texture = ExtResource("2_gis3k")
 
-[node name="Node" parent="." unique_id=58315418 instance=ExtResource("7_83j8s")]
-
-[node name="CheckButton" parent="Node" index="0" unique_id=1296637412]
-offset_left = 693.0
-offset_top = 424.0
-offset_right = 737.0
-offset_bottom = 448.0
-metadata/_edit_use_anchors_ = true
-
 [node name="hover" type="AudioStreamPlayer" parent="." unique_id=59706633]
 stream = ExtResource("8_am25x")
 
 [node name="pressed" type="AudioStreamPlayer" parent="." unique_id=1127230134]
 stream = ExtResource("9_4ppmf")
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=6838623]
+offset_left = 460.0
+offset_top = 414.0
+offset_right = 661.0
+offset_bottom = 462.0
+button_pressed = true
 
 [connection signal="mouse_entered" from="full_screen" to="." method="_on_full_screen_mouse_entered"]
 [connection signal="mouse_exited" from="full_screen" to="." method="_on_full_screen_mouse_exited"]
@@ -332,5 +329,4 @@ stream = ExtResource("9_4ppmf")
 [connection signal="mouse_entered" from="exit" to="." method="_on_exit_mouse_entered"]
 [connection signal="mouse_exited" from="exit" to="." method="_on_exit_mouse_exited"]
 [connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
-
-[editable path="Node"]
+[connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]
