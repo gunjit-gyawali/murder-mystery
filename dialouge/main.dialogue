@@ -1,0 +1,52 @@
+~ start
+Bartender: Hey, Good evening mister. Could I interest you for some fine booze
+player: Here are some choices.
+-First one
+	player:Fine one glass won't hurt 
+-Second one 
+	Player:No thanks, I am here wondering about the neighbourhood murder
+Bartender: The crimes are being more frequent lately.
+player:Its saddening yet its not anything we can prevent happening.I was looking forward to provide justice to the victim.
+Bartender:From what I know he was a fine gentle man he often used to come here for a drink or two.
+player:Anyone in particular you think would want to hurt him.
+bartender: Noone in particular,Umm... he was a silent guy who didn't talked to lot here...
+player:I felt like you were thinking of someone when i asked the question.
+bartender:The man in black was rather suspicous, he was talking to the victim yesterday.
+player:What can you tell me about that person.
+bartender: he was a tall man and he had his face hidden with glasses and cap but he was talking with others too so I am not so sure that he is your man.
+player:Do you know anyone other than victim who talked with that man?
+bartender: man in the corner of first table was also talking to suspicious man yesterday.
+drunkman:Get lost punk, you are not welcomed here.
+player: May i know why?
+drunkman: I have nothing to tell you I know my rights.
+player: well i am down to offer you a drink are you interested.
+drunkman: Talk nomore.
+player: bartender,two drinks for my table.
+bartender: ok sir.
+bartender: here is your drink.
+player: well enjoy your drink tabs on me.
+drunkman:thanks for drink ,but i ain't no snitch.
+player: I won't make you tell me anything you don't want to talk about.
+drunkman: the man in black is a losely drunk but a soft guy i don't think he has the gut to hurt anyone.
+drunkman: bartender is hostile towards him as he always says trash about the drinks. 
+player: May i get an oppurtunities to have a word with that man just to prove his inocence.
+drunkman: his house is across the street beside few houses.
+player: Thanks for help ,I hope you have a wonderful day. Also I sugest you quite drinking it is not good for you.
+
+
+=> END
+
+~ start
+player: hey mister you got guest in your home " rings the bell"
+"A tall guy opens the door"
+guy: Do i know you, how can i help you?
+player: do you know about the murder that happened nearby yesterday. The victim name was "victim".
+guy: Yes he was my physcatrist,He was helping me quite on drinks 
+guy: He caught me drinking yesterday, then I left the bar. I had appointment with him tomarrow.
+player: I think you are the killer.
+guy: Why would i kill the man who was helping me?
+player: you tell me why? being caught drinking doesn't sound like a much of a motive.
+guy: he also was looking towards helping more people get sober in the bar.
+player: who do you think killed him?
+guy: I don't know he was really amazing man he was always looking forward to helping others.
+=> END

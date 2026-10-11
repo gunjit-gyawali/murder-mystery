@@ -130,11 +130,11 @@ rotation = 4.713735
 theme_override_styles/panel = SubResource("StyleBoxTexture_1smem")
 
 [node name="Label" type="Label" parent="." unique_id=1376773541]
-offset_left = 324.0
+offset_left = 293.0
 offset_top = 111.0
-offset_right = 866.0
+offset_right = 879.0
 offset_bottom = 191.0
-text = "Y o u   D i e d"
+text = "Y o u   L O S T"
 label_settings = SubResource("LabelSettings_yw88p")
 
 [node name="Label2" type="Label" parent="." unique_id=373293795]
@@ -185,11 +185,11 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_is402")
 text = "..Quit.."
 
 [node name="Label3" type="Label" parent="." unique_id=1851524978]
-offset_left = 218.0
+offset_left = 199.0
 offset_top = 113.0
-offset_right = 979.0
+offset_right = 984.0
 offset_bottom = 208.0
-text = "(                                                 )"
+text = "(                                                    )"
 label_settings = SubResource("LabelSettings_gxc36")
 
 [node name="Panel5" type="Panel" parent="." unique_id=1536931116]
