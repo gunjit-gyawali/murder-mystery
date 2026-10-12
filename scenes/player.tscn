@@ -543,10 +543,12 @@ radius = 6.0
 radius = 25.0
 
 [node name="player" type="CharacterBody2D" unique_id=531367223 groups=["player"]]
-position = Vector2(88, 84)
+y_sort_enabled = true
+position = Vector2(-13, -24)
 script = ExtResource("1_dqkch")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1538830551]
+y_sort_enabled = true
 position = Vector2(15, 17)
 sprite_frames = SubResource("SpriteFrames_qhqgy")
 animation = &"front_idle"
