@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dmq30p2hrtl4g"
+path="res://.godot/imported/oliver.dialogue-9b12be2998708551f9ec7a038c0a5738.tres"
+
+[deps]
+
+source_file="res://dialouge/oliver.dialogue"
+dest_files=["res://.godot/imported/oliver.dialogue-9b12be2998708551f9ec7a038c0a5738.tres"]
+
+[params]
+
+defaults=true

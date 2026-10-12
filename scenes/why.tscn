@@ -1,0 +1,266 @@
+[gd_scene format=3 uid="uid://dlcelst50x4i7"]
+
+[ext_resource type="Texture2D" uid="uid://bfot4nc08ow4w" path="res://assets/images/dead_menu.png" id="1_knsc7"]
+[ext_resource type="FontFile" uid="uid://tv3u1kathipb" path="res://assets/fonts/DoubleFeature30.ttf" id="2_y4m7i"]
+[ext_resource type="FontFile" uid="uid://cgj1irbbms4yq" path="res://assets/fonts/Another Danger - Demo.otf" id="3_jpgtn"]
+[ext_resource type="FontFile" uid="uid://cq2md06pldohi" path="res://assets/fonts/CinzelDecorative-Bold.ttf" id="4_dl3lk"]
+[ext_resource type="FontFile" uid="uid://q2emyuth2tk6" path="res://assets/fonts/Nightcore Demo.ttf" id="5_4nui7"]
+[ext_resource type="Texture2D" uid="uid://q8do4bhtomkh" path="res://assets/images/arrow.png" id="6_2xhgm"]
+[ext_resource type="Texture2D" uid="uid://c3v85e4vn5iny" path="res://assets/images/line_1.png" id="7_6b78v"]
+[ext_resource type="AudioStream" uid="uid://cjel25816d2ea" path="res://assets/music/hover.mp3" id="8_lt3wn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4n42v"]
+texture = ExtResource("1_knsc7")
+
+[sub_resource type="Gradient" id="Gradient_uo35c"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tksux"]
+gradient = SubResource("Gradient_uo35c")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_abxqn"]
+texture = SubResource("GradientTexture2D_tksux")
+
+[sub_resource type="LabelSettings" id="LabelSettings_kdcik"]
+font = ExtResource("2_y4m7i")
+font_size = 80
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+outline_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.22790706, 0.22791076, 0.22790891, 1)
+shadow_offset = Vector2(5, 5)
+stacked_outline_count = 1
+stacked_outline_0/size = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_bc7mw"]
+font = ExtResource("3_jpgtn")
+font_size = 33
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkf01"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mc1r8"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 10
+border_width_bottom = 10
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5vtw"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 6
+border_width_bottom = 6
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jxusv"]
+font = ExtResource("5_4nui7")
+font_size = 60
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+shadow_size = 8
+shadow_color = Color(0.02745098, 0.043137256, 0.0627451, 1)
+shadow_offset = Vector2(6, 5)
+stacked_outline_count = 1
+stacked_outline_0/size = 4
+stacked_outline_0/color = Color(0.78431374, 0.8235294, 0.8666667, 1)
+
+[node name="why" type="Node2D" unique_id=1845056816]
+
+[node name="Panel" type="Panel" parent="." unique_id=597588248]
+offset_right = 1165.0
+offset_bottom = 657.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_4n42v")
+
+[node name="Panel2" type="Panel" parent="." unique_id=2035764580]
+offset_left = 311.0
+offset_top = -941.0
+offset_right = 1394.5757
+offset_bottom = 830.8356
+rotation = 0.7451721
+theme_override_styles/panel = SubResource("StyleBoxTexture_abxqn")
+
+[node name="Panel3" type="Panel" parent="." unique_id=449770075]
+offset_left = 1763.0001
+offset_top = 693.0
+offset_right = 2846.5757
+offset_bottom = 2464.8354
+rotation = 2.714833
+theme_override_styles/panel = SubResource("StyleBoxTexture_abxqn")
+
+[node name="Panel4" type="Panel" parent="." unique_id=1845294259]
+offset_left = -374.0
+offset_top = 1135.0
+offset_right = 709.5757
+offset_bottom = 2906.8354
+rotation = 4.713735
+theme_override_styles/panel = SubResource("StyleBoxTexture_abxqn")
+
+[node name="Label" type="Label" parent="." unique_id=306145151]
+offset_left = 478.0
+offset_top = 87.0
+offset_right = 686.0
+offset_bottom = 167.0
+text = "Why?"
+label_settings = SubResource("LabelSettings_kdcik")
+
+[node name="Label2" type="Label" parent="." unique_id=1528807458]
+offset_left = 242.0
+offset_top = 207.0
+offset_right = 865.0
+offset_bottom = 264.0
+text = "Why do you think Bartender is the murderer"
+label_settings = SubResource("LabelSettings_bc7mw")
+
+[node name="Oliver" type="Button" parent="." unique_id=137230969]
+offset_left = 143.0
+offset_top = 345.0
+offset_right = 534.0
+offset_bottom = 416.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_dl3lk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_qkf01")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mc1r8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s5vtw")
+text = "Just A random guess"
+
+[node name="Ethan" type="Button" parent="." unique_id=751658446]
+offset_left = 146.0
+offset_top = 435.0
+offset_right = 532.0
+offset_bottom = 506.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_dl3lk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_qkf01")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mc1r8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s5vtw")
+text = "I want him dead "
+
+[node name="Sophia" type="Button" parent="." unique_id=251882058]
+offset_left = 147.0
+offset_top = 522.0
+offset_right = 532.0
+offset_bottom = 593.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_dl3lk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_qkf01")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mc1r8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s5vtw")
+text = ".........."
+
+[node name="Emily" type="Button" parent="." unique_id=1938206681]
+offset_left = 612.0
+offset_top = 346.0
+offset_right = 1003.0
+offset_bottom = 417.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_dl3lk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_qkf01")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mc1r8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s5vtw")
+text = "He was rude "
+
+[node name="Bartender" type="Button" parent="." unique_id=79376478]
+offset_left = 615.0
+offset_top = 436.0
+offset_right = 1001.0
+offset_bottom = 507.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_dl3lk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_qkf01")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mc1r8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s5vtw")
+text = "........................."
+
+[node name="Charlortte" type="Button" parent="." unique_id=2026209599]
+offset_left = 616.0
+offset_top = 523.0
+offset_right = 1001.0
+offset_bottom = 594.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("4_dl3lk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_qkf01")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mc1r8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s5vtw")
+text = "//////////////"
+
+[node name="Label3" type="Label" parent="." unique_id=952422868]
+offset_left = 363.0
+offset_top = 93.0
+offset_right = 1448.0
+offset_bottom = 188.0
+text = "(                        ) "
+label_settings = SubResource("LabelSettings_jxusv")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=111627687]
+visible = false
+position = Vector2(233, 380)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("6_2xhgm")
+
+[node name="Arrow2" type="Sprite2D" parent="." unique_id=927402962]
+visible = false
+position = Vector2(227, 474)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("6_2xhgm")
+
+[node name="Arrow3" type="Sprite2D" parent="." unique_id=102593691]
+visible = false
+position = Vector2(227, 556)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("6_2xhgm")
+
+[node name="Arrow4" type="Sprite2D" parent="." unique_id=388764470]
+visible = false
+position = Vector2(673.7778, 375.875)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("6_2xhgm")
+
+[node name="Arrow5" type="Sprite2D" parent="." unique_id=1257951030]
+visible = false
+position = Vector2(667.7778, 469.875)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("6_2xhgm")
+
+[node name="Arrow6" type="Sprite2D" parent="." unique_id=1361452010]
+visible = false
+position = Vector2(667.7778, 551.875)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("6_2xhgm")
+
+[node name="Line1" type="Sprite2D" parent="." unique_id=1740237423]
+position = Vector2(591, 293)
+scale = Vector2(0.53773147, 0.4212963)
+texture = ExtResource("7_6b78v")
+
+[node name="hover" type="AudioStreamPlayer" parent="." unique_id=1929277431]
+stream = ExtResource("8_lt3wn")

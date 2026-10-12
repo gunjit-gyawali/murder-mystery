@@ -1,0 +1,271 @@
+[gd_scene format=3 uid="uid://dauxetisqjc0o"]
+
+[ext_resource type="Script" uid="uid://dpsx3sx6o185s" path="res://scripts/dead_menu.gd" id="1_aoo1s"]
+[ext_resource type="Texture2D" uid="uid://bfot4nc08ow4w" path="res://assets/images/dead_menu.png" id="2_cpfcw"]
+[ext_resource type="FontFile" uid="uid://tv3u1kathipb" path="res://assets/fonts/DoubleFeature30.ttf" id="3_hd8dq"]
+[ext_resource type="FontFile" uid="uid://cgj1irbbms4yq" path="res://assets/fonts/Another Danger - Demo.otf" id="4_w72e4"]
+[ext_resource type="FontFile" uid="uid://cq2md06pldohi" path="res://assets/fonts/CinzelDecorative-Bold.ttf" id="5_d5uq8"]
+[ext_resource type="FontFile" uid="uid://q2emyuth2tk6" path="res://assets/fonts/Nightcore Demo.ttf" id="6_sogev"]
+[ext_resource type="Texture2D" uid="uid://q8do4bhtomkh" path="res://assets/images/arrow.png" id="7_aarwb"]
+[ext_resource type="Texture2D" uid="uid://c3v85e4vn5iny" path="res://assets/images/line_1.png" id="8_0iwvu"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yw88p"]
+texture = ExtResource("2_cpfcw")
+
+[sub_resource type="Gradient" id="Gradient_1smem"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m086m"]
+gradient = SubResource("Gradient_1smem")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1smem"]
+texture = SubResource("GradientTexture2D_m086m")
+
+[sub_resource type="LabelSettings" id="LabelSettings_yw88p"]
+font = ExtResource("3_hd8dq")
+font_size = 75
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+outline_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.22790706, 0.22791076, 0.22790891, 1)
+shadow_offset = Vector2(5, 5)
+stacked_outline_count = 1
+stacked_outline_0/size = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_n27jj"]
+font = ExtResource("4_w72e4")
+font_size = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6pbo"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gxc36"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 10
+border_width_bottom = 10
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_is402"]
+bg_color = Color(0.15397063, 0.047830492, 0.06970488, 1)
+border_width_top = 6
+border_width_bottom = 6
+border_color = Color(0.61960787, 0.105882354, 0.19607843, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_color = Color(0, 0, 0, 0.6666667)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gxc36"]
+font = ExtResource("6_sogev")
+font_size = 60
+font_color = Color(0.9098039, 0.8784314, 0.8156863, 1)
+shadow_size = 8
+shadow_color = Color(0.02745098, 0.043137256, 0.0627451, 1)
+shadow_offset = Vector2(6, 5)
+stacked_outline_count = 1
+stacked_outline_0/size = 4
+stacked_outline_0/color = Color(0.78431374, 0.8235294, 0.8666667, 1)
+
+[sub_resource type="Gradient" id="Gradient_h6pbo"]
+colors = PackedColorArray(0.15294118, 0.047058824, 0.07058824, 1, 0.15294118, 0.047058824, 0.07058824, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_41dh7"]
+gradient = SubResource("Gradient_h6pbo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_is402"]
+texture = SubResource("GradientTexture2D_41dh7")
+
+[node name="dead_menu2" type="Node2D" unique_id=93181530]
+script = ExtResource("1_aoo1s")
+
+[node name="Panel" type="Panel" parent="." unique_id=1796982833]
+offset_right = 1165.0
+offset_bottom = 657.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_yw88p")
+
+[node name="Panel2" type="Panel" parent="." unique_id=1512685027]
+offset_left = 311.0
+offset_top = -941.0
+offset_right = 1394.5757
+offset_bottom = 830.8356
+rotation = 0.7451721
+theme_override_styles/panel = SubResource("StyleBoxTexture_1smem")
+
+[node name="Panel3" type="Panel" parent="." unique_id=1624133141]
+offset_left = 1763.0001
+offset_top = 693.0
+offset_right = 2846.5757
+offset_bottom = 2464.8354
+rotation = 2.714833
+theme_override_styles/panel = SubResource("StyleBoxTexture_1smem")
+
+[node name="Panel4" type="Panel" parent="." unique_id=507930474]
+offset_left = -374.0
+offset_top = 1135.0
+offset_right = 709.5757
+offset_bottom = 2906.8354
+rotation = 4.713735
+theme_override_styles/panel = SubResource("StyleBoxTexture_1smem")
+
+[node name="Label" type="Label" parent="." unique_id=1376773541]
+offset_left = 293.0
+offset_top = 132.0
+offset_right = 879.0
+offset_bottom = 212.0
+text = "Y o u   L O S T"
+label_settings = SubResource("LabelSettings_yw88p")
+
+[node name="Label2" type="Label" parent="." unique_id=373293795]
+offset_left = 360.0
+offset_top = 225.0
+offset_right = 832.0
+offset_bottom = 277.0
+text = "T h e   T r u t h  I s   S t i l l   O u t   T h e r e"
+label_settings = SubResource("LabelSettings_n27jj")
+
+[node name="retry" type="Button" parent="." unique_id=390496010]
+offset_left = 379.0
+offset_top = 356.0
+offset_right = 770.0
+offset_bottom = 427.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("5_d5uq8")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_h6pbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gxc36")
+theme_override_styles/hover = SubResource("StyleBoxFlat_is402")
+text = "..Retry.."
+
+[node name="main_menu" type="Button" parent="." unique_id=1541035003]
+offset_left = 382.0
+offset_top = 446.0
+offset_right = 768.0
+offset_bottom = 517.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("5_d5uq8")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_h6pbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gxc36")
+theme_override_styles/hover = SubResource("StyleBoxFlat_is402")
+text = "..Main menu.."
+
+[node name="quit" type="Button" parent="." unique_id=1969674575]
+offset_left = 383.0
+offset_top = 533.0
+offset_right = 768.0
+offset_bottom = 604.0
+theme_override_colors/font_color = Color(0.94509804, 0.8980392, 0.8156863, 1)
+theme_override_fonts/font = ExtResource("5_d5uq8")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_h6pbo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gxc36")
+theme_override_styles/hover = SubResource("StyleBoxFlat_is402")
+text = "..Quit.."
+
+[node name="Label3" type="Label" parent="." unique_id=1851524978]
+offset_left = 180.0
+offset_top = 124.0
+offset_right = 965.0
+offset_bottom = 219.0
+text = "(                                                    )"
+label_settings = SubResource("LabelSettings_gxc36")
+
+[node name="Panel5" type="Panel" parent="." unique_id=1536931116]
+offset_left = 769.0
+offset_top = 358.0
+offset_right = 925.87805
+offset_bottom = 425.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_is402")
+
+[node name="Panel6" type="Panel" parent="." unique_id=547309879]
+offset_left = 766.87805
+offset_top = 448.0
+offset_right = 923.7561
+offset_bottom = 515.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_is402")
+
+[node name="Panel7" type="Panel" parent="." unique_id=1143331334]
+offset_left = 766.87805
+offset_top = 535.0
+offset_right = 923.7561
+offset_bottom = 602.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_is402")
+
+[node name="Panel8" type="Panel" parent="." unique_id=1654915088]
+offset_left = 380.0
+offset_top = 427.0
+offset_right = 536.87805
+offset_bottom = 494.0
+rotation = 3.1415927
+theme_override_styles/panel = SubResource("StyleBoxTexture_is402")
+
+[node name="Panel9" type="Panel" parent="." unique_id=404159402]
+offset_left = 384.87805
+offset_top = 515.0
+offset_right = 541.7561
+offset_bottom = 582.0
+rotation = 3.1415927
+theme_override_styles/panel = SubResource("StyleBoxTexture_is402")
+
+[node name="Panel10" type="Panel" parent="." unique_id=1758767981]
+offset_left = 384.87805
+offset_top = 602.0
+offset_right = 541.7561
+offset_bottom = 669.0
+rotation = 3.1415927
+theme_override_styles/panel = SubResource("StyleBoxTexture_is402")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=1586259758]
+visible = false
+position = Vector2(431.00003, 390)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("7_aarwb")
+
+[node name="Arrow2" type="Sprite2D" parent="." unique_id=1683529848]
+visible = false
+position = Vector2(335, 480)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("7_aarwb")
+
+[node name="Arrow3" type="Sprite2D" parent="." unique_id=1679662741]
+visible = false
+position = Vector2(431.00003, 568.00006)
+scale = Vector2(0.099768505, 0.09976851)
+texture = ExtResource("7_aarwb")
+
+[node name="Line1" type="Sprite2D" parent="." unique_id=281232822]
+position = Vector2(591, 293)
+scale = Vector2(0.53773147, 0.4212963)
+texture = ExtResource("8_0iwvu")
+
+[connection signal="mouse_entered" from="retry" to="." method="_on_retry_mouse_entered"]
+[connection signal="mouse_exited" from="retry" to="." method="_on_retry_mouse_exited"]
+[connection signal="pressed" from="retry" to="." method="_on_retry_pressed"]
+[connection signal="mouse_entered" from="main_menu" to="." method="_on_main_menu_mouse_entered"]
+[connection signal="mouse_exited" from="main_menu" to="." method="_on_main_menu_mouse_exited"]
+[connection signal="pressed" from="main_menu" to="." method="_on_main_menu_pressed"]
+[connection signal="mouse_entered" from="quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="mouse_exited" from="quit" to="." method="_on_quit_mouse_exited"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,21 @@
+~ start
+Police: Did you talk with every suspects?
+Player: Yes I did?
+Police: So, Whats the conclusion?
+Player: It was a very difficult to find the culprit?
+Police: And why do you think that?
+Player: Everyone was being very innocent, they ware being nice.
+Police: Who Do you think is the culprit?
+Player: Humm I think its
+- Oliver
+	Police: Nah bro its wrong
+- Emily 
+	Police: But i think she is way innocent
+- Ethan 
+	Police: He is little suspicous
+- Sophia
+	Police: She might be it
+- Bartender
+	Police: I think its right
+- Charlotte 
+=> END

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://n36qmf2q37w8"
+path="res://.godot/imported/police.dialogue-d41f20e6c3f4165a69f6b032c36863f1.tres"
+
+[deps]
+
+source_file="res://dialouge/police.dialogue"
+dest_files=["res://.godot/imported/police.dialogue-d41f20e6c3f4165a69f6b032c36863f1.tres"]
+
+[params]
+
+defaults=true

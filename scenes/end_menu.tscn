@@ -158,18 +158,18 @@ rotation = 4.713735
 theme_override_styles/panel = SubResource("StyleBoxTexture_mc7xi")
 
 [node name="end_game" type="Label" parent="." unique_id=930911317]
-offset_left = 134.0
+offset_left = 180.0
 offset_top = 77.0
-offset_right = 672.0
+offset_right = 718.0
 offset_bottom = 157.0
 text = "C a s e  S o l v e d"
 label_settings = SubResource("LabelSettings_8o8dt")
 
 [node name="caption" type="Label" parent="." unique_id=1448358767]
-offset_left = 230.0
-offset_top = 161.0
-offset_right = 606.0
-offset_bottom = 213.0
+offset_left = 252.0
+offset_top = 149.0
+offset_right = 628.0
+offset_bottom = 201.0
 text = "T h e  t r u t h  h a s  b e e n  r e v e a l e d"
 label_settings = SubResource("LabelSettings_1p1mj")
 
@@ -189,10 +189,10 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_6liln")
 text = "~ Return to the Main menu..."
 
 [node name="arrows" type="Label" parent="." unique_id=1870418266]
-offset_left = 38.0
-offset_top = 53.0
-offset_right = 1075.0
-offset_bottom = 148.0
+offset_left = 89.0
+offset_top = 54.0
+offset_right = 1126.0
+offset_bottom = 149.0
 text = "(                                               )"
 label_settings = SubResource("LabelSettings_mb311")
 
@@ -213,13 +213,13 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_dackk")
 
 [node name="Arrow" type="Sprite2D" parent="." unique_id=1867608278]
 visible = false
-position = Vector2(431.00003, 390)
+position = Vector2(191, 399)
 scale = Vector2(0.099768505, 0.09976851)
 texture = ExtResource("6_iqs5b")
 
 [node name="Line1" type="Sprite2D" parent="." unique_id=1849321694]
-position = Vector2(419, 228.00003)
-scale = Vector2(0.53773147, 0.4212963)
+position = Vector2(419.88895, 224.75)
+scale = Vector2(0.65532416, 0.49027783)
 texture = ExtResource("7_rem33")
 
 [node name="Panel7" type="Panel" parent="." unique_id=2002113203]
@@ -229,4 +229,6 @@ offset_right = 1302.0
 offset_bottom = 916.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_n27jj")
 
+[connection signal="mouse_entered" from="main__menu" to="." method="_on_main__menu_mouse_entered"]
+[connection signal="mouse_exited" from="main__menu" to="." method="_on_main__menu_mouse_exited"]
 [connection signal="pressed" from="main__menu" to="." method="_on_main__menu_pressed"]

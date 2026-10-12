@@ -15,11 +15,11 @@ texture = ExtResource("1_ei52o")
 [sub_resource type="Gradient" id="Gradient_1smem"]
 colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_tksux"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m086m"]
 gradient = SubResource("Gradient_1smem")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1smem"]
-texture = SubResource("GradientTexture2D_tksux")
+texture = SubResource("GradientTexture2D_m086m")
 
 [sub_resource type="LabelSettings" id="LabelSettings_yw88p"]
 font = ExtResource("2_qc26x")
@@ -91,11 +91,11 @@ stacked_outline_0/color = Color(0.78431374, 0.8235294, 0.8666667, 1)
 [sub_resource type="Gradient" id="Gradient_h6pbo"]
 colors = PackedColorArray(0.15294118, 0.047058824, 0.07058824, 1, 0.15294118, 0.047058824, 0.07058824, 0)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_gxc36"]
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_41dh7"]
 gradient = SubResource("Gradient_h6pbo")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_is402"]
-texture = SubResource("GradientTexture2D_gxc36")
+texture = SubResource("GradientTexture2D_41dh7")
 
 [node name="dead_menu" type="Node2D" unique_id=93181530]
 script = ExtResource("1_gxc36")
